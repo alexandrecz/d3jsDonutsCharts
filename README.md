@@ -1,7 +1,7 @@
 # d3jsDonutsCharts
 Simple sample using ReactJS + D3JS and Vite
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://user-images.githubusercontent.com/1831642/188481037-602ebf71-fcce-4088-b37e-10dc7e0308cc.png)
 
 ## Available Scripts
 
