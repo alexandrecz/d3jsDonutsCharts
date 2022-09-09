@@ -15,7 +15,7 @@ export interface DimensionInterface {
 
 export interface BaseChartDataChildrenInterface {
     key?: string;
-    value: number;
+    value: string;
 }
 
 export interface BaseChartContentProps extends DimensionInterface {

@@ -17,7 +17,7 @@ const DonutChart = ({ data, height, width, text }: BaseChartContentProps): JSX.E
     const margin = 15;
     const centerContainer = Math.min(width, height) / 2;
     const radius = centerContainer - margin;
-    const createPie = d3.pie().value((d: BaseDataItemProps) => d.value);
+    const createPie = d3.pie().value((d: BaseDataItemProps) => Number.parseInt(d.value));
 
     const createArc = d3
         .arc()
@@ -44,7 +44,7 @@ const DonutChart = ({ data, height, width, text }: BaseChartContentProps): JSX.E
             (d) =>
             ({
                 text: d.key,
-                value: d.value.toString(),
+                value: d.value,
             } as BaseDataItemProps),
         );
 

@@ -10,10 +10,10 @@ function App() {
   const fruitList = [] as unknown as BaseChartDataChildrenInterface[]
 
   const chargeChart = (): void => {
-    fruitList.push({ key: `Orange`, value: 10 } as BaseChartDataChildrenInterface);
-    fruitList.push({ key: `Blackberry`, value: 50 } as BaseChartDataChildrenInterface);
-    fruitList.push({ key: `Blueberry`, value: 5 } as BaseChartDataChildrenInterface);
-    fruitList.push({ key: `Whatermelon`, value: 8 } as BaseChartDataChildrenInterface);
+    fruitList.push({ key: `Orange`, value: '10' } as BaseChartDataChildrenInterface);
+    fruitList.push({ key: `Blackberry`, value: '50' } as BaseChartDataChildrenInterface);
+    fruitList.push({ key: `Blueberry`, value: '5' } as BaseChartDataChildrenInterface);
+    fruitList.push({ key: `Whatermelon`, value: '8' } as BaseChartDataChildrenInterface);
     setData([...fruitList]);
   };
 
