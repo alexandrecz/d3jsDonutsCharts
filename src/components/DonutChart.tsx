@@ -23,7 +23,7 @@ const DonutChart = ({ data, height, width, text }: BaseChartContentProps): JSX.E
         .arc()
         .innerRadius(radius / 1.55)
         .outerRadius(radius);
-  
+
 
     const colors = d3.scaleOrdinal(d3.schemeRdBu[9]);
 
@@ -67,7 +67,7 @@ const DonutChart = ({ data, height, width, text }: BaseChartContentProps): JSX.E
                                 style={{ cursor: 'pointer' }}
                                 className="mouse-tracker"
                                 d={createArc(pieDataItem)}
-                                fill={colors(index)}
+                                fill={colors(index.toString())}
                                 stroke={`white`}
                                 strokeWidth={piePieItems.length < 5 ? '2' : '0'}
                                 onMouseMove={(event) => showsTooltip(event, pieDataItem.data)}
